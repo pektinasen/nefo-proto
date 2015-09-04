@@ -1,0 +1,229 @@
+@import 'breakpoint';
+@import 'singularitygs';
+@import 'toolkit';
+@import 'compass/css3/images';
+
+
+@include add-grid(12);
+@include add-gutter(1/3);
+
+$grey: rgb(249,249,249);
+$dark-grey: rgb(158,158,158);
+$color: rgb(255,252,243);
+$heading-bg: rgb(64,117,159); 
+$study-bg: rgb(77,144,197);
+$nav-color: rgb(82,149,204);
+$date-bg-color: rgb(123,173,74);
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#logo {
+	max-width: 320px;
+	max-height: 100px;
+	float: left;
+}
+
+header {
+	@include grid-span(12,1);
+	background: $grey;
+	.navigation {
+		color: $dark-grey;
+		background-color: $grey;
+		float: left;
+		a {
+			text-decoration: none;
+		}
+		a:visited {
+   			color: $dark-grey;;
+		}
+	}
+}
+
+nav ul {
+	margin: 0;
+    padding: 0;
+	background-color: $nav-color;
+	list-style-type: none;
+	a {
+		text-decoration: none;
+		color: $color;
+	}
+}
+
+.navigation li {
+	display: inline;
+}
+
+nav .navigation {
+	padding: 10px 0;
+
+	color: $color;
+}
+
+img {
+	max-height: 200px;
+}
+
+.container {
+	border-bottom: 2px solid rgb(229,229,299);
+	padding-bottom: 4em;
+	@include grid-span(12,1);
+	@include filter-gradient(#03207c, #1e5799, vertical); // IE6-9
+	@include background-image(linear-gradient(bottom,
+		rgba(243,243,243,1) 0px,
+		rgba(243,243,243, 0.01) 40px));
+}
+
+.feature {
+	margin-top: 2em;
+	h2 {
+		display: inline;
+		background-color: $heading-bg;
+		color: $color;
+	}
+
+}
+
+.feature-img {
+	@include grid-span(5,1);
+}
+
+.feature-content {
+	margin: auto 0;
+	@include grid-span(7,6);
+}
+
+.news {
+	padding-top: 40px;
+	@include grid-span(12,1);
+}
+
+.news h2 {
+	position: relative;
+	top: -40px;
+	display: inline;
+	background-color: $heading-bg;
+	color: $color;
+	padding: 0 1em;
+}
+
+.news-item-1 {
+	@include grid-span(4,1);
+}
+
+.news-item-2 {
+	@include grid-span(4,5);
+}
+
+.news-item-3 {
+	@include grid-span(4,9);
+}
+
+.products {
+	padding-top: 40px;
+	@include grid-span(12,1);
+}
+
+.products h2 {
+	position: relative;
+	top: -40px;
+	display: inline;
+	background-color: $heading-bg;
+	color: $color;
+	padding: 0 1em;
+}
+
+.product {
+	position:relative;
+	h3 , p {
+		position: absolute;
+		color: white;
+		z-index: 2;
+	}
+	h3 {
+		top: 50px;
+		font-size : 1em;
+	}
+	p {
+		top: 100px;
+		font-size : 0.8em;
+	}
+}
+
+.product-item-1 {
+	@include grid-span(4,1);
+}
+
+.product-item-2 {
+	@include grid-span(4,5);
+}
+
+.product-item-3 {
+	@include grid-span(4,9);
+}
+
+.p-img img {
+	@include grid-span(12,1);
+}
+
+.p-img::after {
+	content: " ";
+	width: 250px;
+	height: 100px;
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	// left: 8px;
+	top:72px;
+	position: absolute;
+	z-index: 1;
+	@include grid-span(12,1);
+}
+
+.clearfix::before {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
+
+.lang-selected {
+	background-color: $nav-color;
+	color: $color;
+	padding: 3px 7px;
+}
+
+.dates, .bio-news, .ipbes-news {
+	ul {
+		list-style-type: none;
+		padding :0px;
+		h3 {
+			background-color: $date-bg-color;
+			color: $color;
+			font-size: 1em;
+			padding-left: 1em;
+			padding-top: .7em;
+			padding-bottom: .7em;
+			background-image: url(../images/map.png);
+			background-repeat: no-repeat;
+    		background-position: right top;		
+
+		}
+	}
+}
+
+.dates {
+	@include grid-span(4,1);
+	h3 {
+
+	}
+}
+
+.bio-news {
+	@include grid-span(4,5);
+}
+
+.ipbes-news {
+	@include grid-span(4,9);
+}
