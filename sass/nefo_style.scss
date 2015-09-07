@@ -7,6 +7,8 @@
 @include add-grid(12);
 @include add-gutter(1/3);
 
+* { box-sizing: border-box;}
+
 $grey: rgb(249,249,249);
 $dark-grey: rgb(158,158,158);
 $color: rgb(255,252,243);
@@ -14,16 +16,26 @@ $heading-bg: rgb(64,117,159);
 $study-bg: rgb(77,144,197);
 $nav-color: rgb(82,149,204);
 $date-bg-color: rgb(123,173,74);
+
+svg {
+	fill : $date-bg-color
+}
+
+
 body {
 	width: 960px;
 	margin: 0 auto;
+	font-family: sans-serif;
 }
+
 
 #logo {
 	max-width: 320px;
 	max-height: 100px;
 	float: left;
 }
+
+
 
 header {
 	@include grid-span(12,1);
@@ -34,37 +46,76 @@ header {
 		float: left;
 		a {
 			text-decoration: none;
-		}
-		a:visited {
-   			color: $dark-grey;;
+			color: $dark-grey;
 		}
 	}
 }
 
+ul.navigation li.login a{
+	color: $date-bg-color;
+	background: url(../images/login.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 17px 17px;	
+
+	padding-left: 20px;
+}
+
+
+.navigation li {
+	display: inline;
+}
+
 nav ul {
-	margin: 0;
-    padding: 0;
-	background-color: $nav-color;
 	list-style-type: none;
+	a {
+		text-decoration: none;
+	}
+}
+nav ul.main-nav {
+	@include grid-span(8,1);
+	padding: 10px 0;
+	margin: 0;
+	background-color: $nav-color;
 	a {
 		text-decoration: none;
 		color: $color;
 	}
 }
 
-.navigation li {
-	display: inline;
+nav ul.second-nav {
+	@include grid-span(4,9);
+	background-color: $color;
+	a {
+		color: $nav-color;
+	}
 }
 
-nav .navigation {
-	padding: 10px 0;
-
-	color: $color;
+.nav-item-1 {
+	@include grid-span(3,1);
 }
+.nav-item-2 {
+	@include grid-span(3,4);
+}
+.nav-item-3 {
+	@include grid-span(3,7);
+}
+.nav-item-4 {
+	@include grid-span(3,10);
+}
+.nav-item-5 {
+	// @include grid-span(2,9);
+}
+.nav-item-6 {
+	// @include grid-span(2,11);
+}
+
 
 img {
 	max-height: 200px;
 }
+
+
 
 .container {
 	border-bottom: 2px solid rgb(229,229,299);
@@ -101,6 +152,7 @@ img {
 }
 
 .news h2 {
+	font-size: 12pt;
 	position: relative;
 	top: -40px;
 	display: inline;
@@ -127,6 +179,7 @@ img {
 }
 
 .products h2 {
+	font-size: 12pt;
 	position: relative;
 	top: -40px;
 	display: inline;
@@ -207,23 +260,80 @@ img {
 			padding-bottom: .7em;
 			background-image: url(../images/map.png);
 			background-repeat: no-repeat;
-    		background-position: right top;		
-
+    		background-position: 100% 95% ;	
+    		background-size: 35px 35px;
 		}
 	}
 }
 
 .dates {
 	@include grid-span(4,1);
-	h3 {
-
+	h2 {
+		font-size: 12pt;
+		position: relative;
+		// top: -40px;
+		display: inline;
+		background-color: $heading-bg;
+		color: $color;
+		padding: 0 1em;
 	}
 }
 
 .bio-news {
 	@include grid-span(4,5);
+		h2 {
+		font-size: 12pt;
+		position: relative;
+		// top: -40px;
+		display: inline;
+		background-color: $heading-bg;
+		color: $color;
+		padding: 0 1em;
+	}
 }
 
 .ipbes-news {
 	@include grid-span(4,9);
+		h2 {
+		font-size: 12pt;
+		position: relative;
+		// top: -40px;
+		display: inline;
+		background-color: $heading-bg;
+		color: $color;
+		padding: 0 1em;
+	}
+}
+
+.studies {
+	h2 {
+		font-size: 12pt;
+		position: relative;
+		// top: -40px;
+		display: inline;
+		background-color: $heading-bg;
+		color: $color;
+		padding: 0 1em;
+	}
+}
+
+.study-item {
+	background-color: $nav-color;
+	color: $color;
+	// padding: 1px 1em;
+	height: 7em;
+	padding: 0px 13px;
+}
+
+.study-item-1 {
+	@include grid-span(3,1, $gutter: 0.15);	
+}
+.study-item-2 {
+	@include grid-span(3,4, $gutter: 0.15);	
+}
+.study-item-3 {
+	@include grid-span(3,7, $gutter: 0.15);	
+}
+.study-item-4 {
+	@include grid-span(3,10, $gutter: 0.15);	
 }

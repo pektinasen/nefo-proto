@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Nefo - Vielfalt im Dialog</title>
-  <link media="all" href="stylesheets/nefo_style.css" rel="stylesheet"></link>
+  <link media="all" href="stylesheets/nefo_style.css" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <header class="clearfix">
     <img id="logo" src="images/nefo-logo.png" alt="Das Nefo Logo">
     <ul class="navigation">
-      <li><a href="">Login</a></li>
-      <li><a href="">Presse</a></li>
-      <li><a href="">Glossar</a></li>
-      <li><a href="">Akronyme</a></li>
-      <li><a href="">Kontakt</a></li>
-      <li><a href=""><span class="lang-selected">DE</span> | EN</a></li>
+      <li class="login"><a href="">Login</a></li>
+      <li><a href="login">Presse</a></li>
+      <li><a href="presse">Glossar</a></li>
+      <li><a href="akronyme">Akronyme</a></li>
+      <li><a href="kontakt">Kontakt</a></li>
+      <li><a href="#de"><span class="lang-selected">DE</span> | EN</a></li>
     </ul>
   </header>
 
 
-  <nav class="clearfix">
-    <ul class="navigation">
-      <li><a href="">Unsere Themen</a></li>
-      <li><a href="">Politik</a></li>
-      <li><a href="">Forschung</a></li>
-      <li><a href="">Schnittstellen</a></li>
-      <li><a href="">Das Nefo</a></li>
-      <li><a href="">News &amp Events</a></li>
+  <nav class=" clearfix">
+    <ul class="main-nav navigation">
+      <li class="nav-item-1"><a href="">Unsere Themen<br>Biodiversität Der Schwerpunkt unserer Arbeit</a></li>
+      <li class="nav-item-2"><a href="">Politik<br>Infoangebot für Politik und Verwaltung</a></li>
+      <li class="nav-item-3"><a href="">Forschung<br>Überblick über Das Forschungsfeld</a></li>
+      <li class="nav-item-4"><a href="">Schnittstellen<br>Die richtige Zusammenarbeit der Disziplinen</a></li>
+    </ul>
+    <ul class="second-nav navigation">
+      <li class="nav-item-5 "><a href="">Das Nefo</a></li>
+      <li class="nav-item-6"><a href="">News &amp; Events</a></li>
     </ul> 
   </nav>
   
-  <div class="main">
+  <div class="main clearfix">
     <div class="feature container">
       <h2>Feature</h2>
       <img class="feature-img" src="images/turtle.jpg" alt="">
@@ -101,91 +103,102 @@
     <div class="container">
         
       <div class="dates">
-      <h2>Termine</h2>
-      <ul>
-      <li class="date-item">
-        <h3>06.09.2015 | Berlin</h3>
-        <p>TEDx Berlin</p>
-      </li>
-      <li class="date-item">
-        <h3>21.-25.09.2015 | Barcelona</h3>
-        <p>DrupalCon Barcelona</p>
-      <li class="date-item">
-        <h3>02.-04.10. 2015| Berlin </h3>
-        <p>KLB Open 2015</p>
-     </li> 
-    </ul><!-- .dates -->
-    </div>
-    <div class="bio-news">
-    <h2>Biodiv-News</h2>
-    <ul>
-      <li class="bio-news-item">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        </p>
-      </li>
-      <li class="bio-news-item">
-        <p> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </li>
-      <li class="bio-news-item">
-        <p>
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      </li>
-      <li class="bio-news-item">
-        <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-      </li>
-      <li class="bio-news-item">
-        <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
-      </li>
-      <li class="bio-news-item">
-        <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </li>
-    </ul>
-    </div>
-    <div class="ipbes-news">
-      <h2>IPBES-News</h2>
-      <ul>
-        <li class="ipbes-news-item">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          </p>
+        <h2>Termine</h2>
+        <ul>
+        <li class="date-item">
+          <h3>06.09.2015 | Berlin</h3>
+          <p>TEDx Berlin</p>
         </li>
-        <li class="ipbes-news-item">
-          <p> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        </li>
-        <li class="ipbes-news-item">
-          <p>
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-        </li>
-        <li class="ipbes-news-item">
-          <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        </li>
-        <li class="ipbes-news-item">
-          <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
-        </li>
-        <li class="ipbes-news-item">
-          <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </li>
-      </ul>
-    </div>
+        <li class="date-item">
+          <h3>21.-25.09.2015 | Barcelona</h3>
+          <p>DrupalCon Barcelona</p>
+        <li class="date-item">
+          <h3>02.-04.10. 2015| Berlin </h3>
+          <p>KLB Open 2015</p>
+       </li> 
+        </ul>
+        <hr>
+        <a href="dates">alle Termine</a>
+      </div><!-- .dates -->
+
+      <div class="bio-news">
+        <h2>Biodiv-News</h2>
+        <ul>
+          <li class="bio-news-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+          </li>
+          <li class="bio-news-item">
+            <p> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </li>
+          <li class="bio-news-item">
+            <p>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+          </li>
+          <li class="bio-news-item">
+            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+          </li>
+          <li class="bio-news-item">
+            <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+          </li>
+          <li class="bio-news-item">
+            <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+        </ul>
+        <hr>
+        <a href="biodiv-news">alle Bio-Div Nachrichten</a>
+      </div>
+      <div class="ipbes-news">
+        <h2>IPBES-News</h2>
+        <ul>
+          <li class="ipbes-news-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+          </li>
+          <li class="ipbes-news-item">
+            <p> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </li>
+          <li class="ipbes-news-item">
+            <p>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+          </li>
+          <li class="ipbes-news-item">
+            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+          </li>
+          <li class="ipbes-news-item">
+            <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+          </li>
+          <li class="ipbes-news-item">
+            <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+        </ul>
+        <hr>
+        <a href="ipbes-news">alle IPBES-Nachrichten</a>
+      </div>
     </div>
 
-    <div class="studies container clearfix">
-      <h2>Studien</h2>
-      <div class="study-item">
-        <h3>Ökologische Biodiversitätsforschung</h3>
+    <div class="studies container">
+      <h2>Unsere Studien</h2>
+      <div class="studies-content">
+        <div class="study-item study-item-1">
+          <h3>Ökologische Biodiversitätsforschung</h3>
+        </div>
+        <div class="study-item study-item-2">
+          <h3>Taxonomische Forschung in Deutschland</h3>
+        </div>
+        <div class="study-item study-item-3">
+          <h3>Sozioökonomische Biodiversitätsforschung in Deutschland</h3>
+        </div>
+        <div class="study-item study-item-4" >
+          <h3>biodiversitätsforschung in Deutschland</h3>
+        </div>
+      <div style="margin-top: 10px;clear:right;">
+       <a href="all_studies">alle Studien</a>
       </div>
-      <div class="study-item">
-        <h3>Taxonomische Forschung in Deutschland</h3>
       </div>
-      <div class="study-item">
-        <h3>Sozioökonomische Biodiversitätsforschung in Deutschland</h3>
-      </div>
-      <div class="study-item">
-        <h3>biodiversitätsforschung in Deutschland</h3>
-      </div>
-      <a href="all_studies">alle Studien</a>
     </div>
     
-    <div class="interview">
+    <div class="interview ">
       <img src="images/monkey.jpg" alt="">
       <h3>Datenmanagement</h3>
       <p>lorem ipsum</p>
@@ -214,7 +227,7 @@
         <li>Inwertsetzung</li>
         <li>Bioölonomi</li>
         <li>Monitoring</li>
-        <li>Access &amp Benifit</li>
+        <li>Access &amp; Benifit</li>
       </ul>
       <h3>Politik</h3>
       <ul>
@@ -229,7 +242,7 @@
         <li>Inwertsetzung</li>
         <li>Bioölonomi</li>
         <li>Monitoring</li>
-        <li>Access &amp Benifit</li>
+        <li>Access &amp; Benifit</li>
       </ul>
       <h3>Schnittstelle</h3>
       <ul>
@@ -238,13 +251,13 @@
         <li>Inwertsetzung</li>
         <li>Bioölonomi</li>
         <li>Monitoring</li>
-        <li>Access &amp Benifit</li>
+        <li>Access &amp; Benifit</li>
       </ul>
       <h3>Gefördert von</h3>
       <img src="ministerium.jpg" alt="">
     </div> <!-- sitemap -->
 
   </div> <!-- .main -->
-
+<div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a> and was altered by NEFO</div>
 </body>
 </html>

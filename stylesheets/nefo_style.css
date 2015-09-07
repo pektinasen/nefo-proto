@@ -1,17 +1,28 @@
-/* line 17, ../sass/nefo_style.scss */
+/* line 10, ../sass/nefo_style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/nefo_style.scss */
+svg {
+  fill: #7bad4a;
+}
+
+/* line 25, ../sass/nefo_style.scss */
 body {
   width: 960px;
   margin: 0 auto;
+  font-family: sans-serif;
 }
 
-/* line 22, ../sass/nefo_style.scss */
+/* line 32, ../sass/nefo_style.scss */
 #logo {
   max-width: 320px;
   max-height: 100px;
   float: left;
 }
 
-/* line 28, ../sass/nefo_style.scss */
+/* line 40, ../sass/nefo_style.scss */
 header {
   width: 100%;
   float: right;
@@ -20,51 +31,115 @@ header {
   clear: none;
   background: #f9f9f9;
 }
-/* line 31, ../sass/nefo_style.scss */
+/* line 43, ../sass/nefo_style.scss */
 header .navigation {
   color: #9e9e9e;
   background-color: #f9f9f9;
   float: left;
 }
-/* line 35, ../sass/nefo_style.scss */
+/* line 47, ../sass/nefo_style.scss */
 header .navigation a {
   text-decoration: none;
-}
-/* line 38, ../sass/nefo_style.scss */
-header .navigation a:visited {
   color: #9e9e9e;
 }
 
-/* line 44, ../sass/nefo_style.scss */
-nav ul {
-  margin: 0;
-  padding: 0;
-  background-color: #5295cc;
-  list-style-type: none;
-}
-/* line 49, ../sass/nefo_style.scss */
-nav ul a {
-  text-decoration: none;
-  color: #fffcf3;
+/* line 54, ../sass/nefo_style.scss */
+ul.navigation li.login a {
+  color: #7bad4a;
+  background: url(../images/login.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 17px 17px;
+  padding-left: 20px;
 }
 
-/* line 55, ../sass/nefo_style.scss */
+/* line 65, ../sass/nefo_style.scss */
 .navigation li {
   display: inline;
 }
 
-/* line 59, ../sass/nefo_style.scss */
-nav .navigation {
+/* line 69, ../sass/nefo_style.scss */
+nav ul {
+  list-style-type: none;
+}
+/* line 71, ../sass/nefo_style.scss */
+nav ul a {
+  text-decoration: none;
+}
+
+/* line 75, ../sass/nefo_style.scss */
+nav ul.main-nav {
+  width: 65.95745%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
   padding: 10px 0;
+  margin: 0;
+  background-color: #5295cc;
+}
+/* line 80, ../sass/nefo_style.scss */
+nav ul.main-nav a {
+  text-decoration: none;
   color: #fffcf3;
 }
 
-/* line 65, ../sass/nefo_style.scss */
+/* line 86, ../sass/nefo_style.scss */
+nav ul.second-nav {
+  width: 31.91489%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  background-color: #fffcf3;
+}
+/* line 89, ../sass/nefo_style.scss */
+nav ul.second-nav a {
+  color: #5295cc;
+}
+
+/* line 94, ../sass/nefo_style.scss */
+.nav-item-1 {
+  width: 23.40426%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+/* line 97, ../sass/nefo_style.scss */
+.nav-item-2 {
+  width: 23.40426%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 25.53191%;
+  clear: none;
+}
+
+/* line 100, ../sass/nefo_style.scss */
+.nav-item-3 {
+  width: 23.40426%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 51.06383%;
+  clear: none;
+}
+
+/* line 103, ../sass/nefo_style.scss */
+.nav-item-4 {
+  width: 23.40426%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/* line 114, ../sass/nefo_style.scss */
 img {
   max-height: 200px;
 }
 
-/* line 69, ../sass/nefo_style.scss */
+/* line 120, ../sass/nefo_style.scss */
 .container {
   border-bottom: 2px solid #e5e5ff;
   padding-bottom: 4em;
@@ -83,18 +158,18 @@ img {
   background-image: linear-gradient(to top, #f3f3f3 0px, rgba(243, 243, 243, 0.01) 40px);
 }
 
-/* line 79, ../sass/nefo_style.scss */
+/* line 130, ../sass/nefo_style.scss */
 .feature {
   margin-top: 2em;
 }
-/* line 81, ../sass/nefo_style.scss */
+/* line 132, ../sass/nefo_style.scss */
 .feature h2 {
   display: inline;
   background-color: #40759f;
   color: #fffcf3;
 }
 
-/* line 89, ../sass/nefo_style.scss */
+/* line 140, ../sass/nefo_style.scss */
 .feature-img {
   width: 40.42553%;
   float: left;
@@ -103,7 +178,7 @@ img {
   clear: none;
 }
 
-/* line 93, ../sass/nefo_style.scss */
+/* line 144, ../sass/nefo_style.scss */
 .feature-content {
   margin: auto 0;
   width: 57.44681%;
@@ -113,7 +188,7 @@ img {
   clear: none;
 }
 
-/* line 98, ../sass/nefo_style.scss */
+/* line 149, ../sass/nefo_style.scss */
 .news {
   padding-top: 40px;
   width: 100%;
@@ -123,8 +198,9 @@ img {
   clear: none;
 }
 
-/* line 103, ../sass/nefo_style.scss */
+/* line 154, ../sass/nefo_style.scss */
 .news h2 {
+  font-size: 12pt;
   position: relative;
   top: -40px;
   display: inline;
@@ -133,7 +209,7 @@ img {
   padding: 0 1em;
 }
 
-/* line 112, ../sass/nefo_style.scss */
+/* line 164, ../sass/nefo_style.scss */
 .news-item-1 {
   width: 31.91489%;
   float: left;
@@ -142,7 +218,7 @@ img {
   clear: none;
 }
 
-/* line 116, ../sass/nefo_style.scss */
+/* line 168, ../sass/nefo_style.scss */
 .news-item-2 {
   width: 31.91489%;
   float: left;
@@ -151,7 +227,7 @@ img {
   clear: none;
 }
 
-/* line 120, ../sass/nefo_style.scss */
+/* line 172, ../sass/nefo_style.scss */
 .news-item-3 {
   width: 31.91489%;
   float: right;
@@ -160,7 +236,7 @@ img {
   clear: none;
 }
 
-/* line 124, ../sass/nefo_style.scss */
+/* line 176, ../sass/nefo_style.scss */
 .products {
   padding-top: 40px;
   width: 100%;
@@ -170,8 +246,9 @@ img {
   clear: none;
 }
 
-/* line 129, ../sass/nefo_style.scss */
+/* line 181, ../sass/nefo_style.scss */
 .products h2 {
+  font-size: 12pt;
   position: relative;
   top: -40px;
   display: inline;
@@ -180,28 +257,28 @@ img {
   padding: 0 1em;
 }
 
-/* line 138, ../sass/nefo_style.scss */
+/* line 191, ../sass/nefo_style.scss */
 .product {
   position: relative;
 }
-/* line 140, ../sass/nefo_style.scss */
+/* line 193, ../sass/nefo_style.scss */
 .product h3, .product p {
   position: absolute;
   color: white;
   z-index: 2;
 }
-/* line 145, ../sass/nefo_style.scss */
+/* line 198, ../sass/nefo_style.scss */
 .product h3 {
   top: 50px;
   font-size: 1em;
 }
-/* line 149, ../sass/nefo_style.scss */
+/* line 202, ../sass/nefo_style.scss */
 .product p {
   top: 100px;
   font-size: 0.8em;
 }
 
-/* line 155, ../sass/nefo_style.scss */
+/* line 208, ../sass/nefo_style.scss */
 .product-item-1 {
   width: 31.91489%;
   float: left;
@@ -210,7 +287,7 @@ img {
   clear: none;
 }
 
-/* line 159, ../sass/nefo_style.scss */
+/* line 212, ../sass/nefo_style.scss */
 .product-item-2 {
   width: 31.91489%;
   float: left;
@@ -219,7 +296,7 @@ img {
   clear: none;
 }
 
-/* line 163, ../sass/nefo_style.scss */
+/* line 216, ../sass/nefo_style.scss */
 .product-item-3 {
   width: 31.91489%;
   float: right;
@@ -228,7 +305,7 @@ img {
   clear: none;
 }
 
-/* line 167, ../sass/nefo_style.scss */
+/* line 220, ../sass/nefo_style.scss */
 .p-img img {
   width: 100%;
   float: right;
@@ -237,7 +314,7 @@ img {
   clear: none;
 }
 
-/* line 171, ../sass/nefo_style.scss */
+/* line 224, ../sass/nefo_style.scss */
 .p-img::after {
   content: " ";
   width: 250px;
@@ -253,7 +330,7 @@ img {
   clear: none;
 }
 
-/* line 183, ../sass/nefo_style.scss */
+/* line 236, ../sass/nefo_style.scss */
 .clearfix::before {
   content: ".";
   clear: both;
@@ -262,19 +339,19 @@ img {
   height: 0px;
 }
 
-/* line 191, ../sass/nefo_style.scss */
+/* line 244, ../sass/nefo_style.scss */
 .lang-selected {
   background-color: #5295cc;
   color: #fffcf3;
   padding: 3px 7px;
 }
 
-/* line 198, ../sass/nefo_style.scss */
+/* line 251, ../sass/nefo_style.scss */
 .dates ul, .bio-news ul, .ipbes-news ul {
   list-style-type: none;
   padding: 0px;
 }
-/* line 201, ../sass/nefo_style.scss */
+/* line 254, ../sass/nefo_style.scss */
 .dates ul h3, .bio-news ul h3, .ipbes-news ul h3 {
   background-color: #7bad4a;
   color: #fffcf3;
@@ -284,10 +361,11 @@ img {
   padding-bottom: .7em;
   background-image: url(../images/map.png);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 100% 95%;
+  background-size: 35px 35px;
 }
 
-/* line 216, ../sass/nefo_style.scss */
+/* line 269, ../sass/nefo_style.scss */
 .dates {
   width: 31.91489%;
   float: left;
@@ -295,8 +373,17 @@ img {
   margin-left: 0;
   clear: none;
 }
+/* line 271, ../sass/nefo_style.scss */
+.dates h2 {
+  font-size: 12pt;
+  position: relative;
+  display: inline;
+  background-color: #40759f;
+  color: #fffcf3;
+  padding: 0 1em;
+}
 
-/* line 223, ../sass/nefo_style.scss */
+/* line 282, ../sass/nefo_style.scss */
 .bio-news {
   width: 31.91489%;
   float: left;
@@ -304,10 +391,82 @@ img {
   margin-left: 34.04255%;
   clear: none;
 }
+/* line 284, ../sass/nefo_style.scss */
+.bio-news h2 {
+  font-size: 12pt;
+  position: relative;
+  display: inline;
+  background-color: #40759f;
+  color: #fffcf3;
+  padding: 0 1em;
+}
 
-/* line 227, ../sass/nefo_style.scss */
+/* line 295, ../sass/nefo_style.scss */
 .ipbes-news {
   width: 31.91489%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+/* line 297, ../sass/nefo_style.scss */
+.ipbes-news h2 {
+  font-size: 12pt;
+  position: relative;
+  display: inline;
+  background-color: #40759f;
+  color: #fffcf3;
+  padding: 0 1em;
+}
+
+/* line 309, ../sass/nefo_style.scss */
+.studies h2 {
+  font-size: 12pt;
+  position: relative;
+  display: inline;
+  background-color: #40759f;
+  color: #fffcf3;
+  padding: 0 1em;
+}
+
+/* line 320, ../sass/nefo_style.scss */
+.study-item {
+  background-color: #5295cc;
+  color: #fffcf3;
+  height: 7em;
+  padding: 0px 13px;
+}
+
+/* line 328, ../sass/nefo_style.scss */
+.study-item-1 {
+  width: 24.17582%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+/* line 331, ../sass/nefo_style.scss */
+.study-item-2 {
+  width: 24.17582%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 25.27473%;
+  clear: none;
+}
+
+/* line 334, ../sass/nefo_style.scss */
+.study-item-3 {
+  width: 24.17582%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 50.54945%;
+  clear: none;
+}
+
+/* line 337, ../sass/nefo_style.scss */
+.study-item-4 {
+  width: 24.17582%;
   float: right;
   margin-left: 0;
   margin-right: 0;
