@@ -23,7 +23,7 @@ svg {
 
 
 body {
-	width: 960px;
+	width: 1400px;
 	margin: 0 auto;
 	font-family: sans-serif;
 }
@@ -112,7 +112,7 @@ nav ul.second-nav {
 
 
 img {
-	max-height: 200px;
+	max-height: 250px;
 }
 
 
@@ -196,12 +196,13 @@ img {
 		z-index: 2;
 	}
 	h3 {
-		top: 50px;
-		font-size : 1em;
+		// font-size: 25pt;
+		top: 100px;
+		font-size : 1.5em;
 	}
 	p {
-		top: 100px;
-		font-size : 0.8em;
+		top: 180px;
+		font-size : 1em;
 	}
 }
 
@@ -227,10 +228,28 @@ img {
 	height: 100px;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 	// left: 8px;
-	top:72px;
+	top: 150px;
 	position: absolute;
 	z-index: 1;
 	@include grid-span(12,1);
+}
+
+.product-sub-1 {
+	float: left;
+}
+
+.product-sub-2 {
+	float: right;
+}
+
+	
+.product-rule {
+	clear: right;
+	position: relative;
+	top: 10px;
+	height: 3px;
+	width: 100%;
+	background-color: $date-bg-color;
 }
 
 .clearfix::before {
@@ -244,11 +263,13 @@ img {
 .lang-selected {
 	background-color: $nav-color;
 	color: $color;
+
 	padding: 3px 7px;
 }
 
 .dates, .bio-news, .ipbes-news {
 	ul {
+		height: 280px;
 		list-style-type: none;
 		padding :0px;
 		h3 {
@@ -306,10 +327,13 @@ img {
 }
 
 .studies {
+	margin-top: 20px;
+
 	h2 {
+
 		font-size: 12pt;
 		position: relative;
-		// top: -40px;
+		top: -20px;
 		display: inline;
 		background-color: $heading-bg;
 		color: $color;
@@ -322,7 +346,10 @@ img {
 	color: $color;
 	// padding: 1px 1em;
 	height: 7em;
-	padding: 0px 13px;
+	// padding: 0px 13px;
+	h3 {
+		vertical-align: middle;
+	}
 }
 
 .study-item-1 {
@@ -336,4 +363,89 @@ img {
 }
 .study-item-4 {
 	@include grid-span(3,10, $gutter: 0.15);	
+}
+
+.footer {
+	@include grid-span(12,1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	@include layout(5) {
+		a {
+			@include float-span(1);
+		}
+		a:last-child {
+			@include float-span(1, 'last');
+		}
+		
+	}
+	
+	a {
+		color: #999999;
+		text-decoration: none;
+		font-size: 16pt;
+	}
+	
+	a img{
+		vertical-align: middle;
+	}
+	img {
+		margin-right: 20px;
+		width: 50px;
+	}
+
+
+}
+
+.color-rule {
+	height: 3px;
+	@include grid-span(12,1);
+	background-color: rgb(66,145,163); // Old browsers
+	@include filter-gradient(#4291a3, #7eb24b, horizontal); // IE6-9
+	@include background-image(
+		linear-gradient(left,
+			rgba(66,145,163,1) 0%,
+			rgba(67,126,182,1) 40%,
+			rgba(172,204,68,1) 75%,
+			rgba(126,178,75,1) 100%));
+}
+
+.sitemap {
+	background-color: $grey;
+	ul {
+		list-style-type: none;
+		padding: 0 0;
+	}
+	li {
+		color: $nav-color;
+		font-weight: bold;
+	}
+}
+.sitemap-1 {
+	@include grid-span(2,1);
+}
+
+.sitemap-2 {
+	@include grid-span(2,3);
+}
+
+.sitemap-3 {
+	@include grid-span(2,5);
+}
+
+.sitemap-4 {
+	@include grid-span(2,7);
+}
+
+.sitemap-5 {
+	@include grid-span(2,9);
+}
+
+.sitemap-6 {
+	@include grid-span(2,11);
+}
+
+#bmbf {
+
+	width: 100%;
 }

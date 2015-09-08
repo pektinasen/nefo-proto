@@ -10,7 +10,7 @@ svg {
 
 /* line 25, ../sass/nefo_style.scss */
 body {
-  width: 960px;
+  width: 1400px;
   margin: 0 auto;
   font-family: sans-serif;
 }
@@ -136,7 +136,7 @@ nav ul.second-nav a {
 
 /* line 114, ../sass/nefo_style.scss */
 img {
-  max-height: 200px;
+  max-height: 250px;
 }
 
 /* line 120, ../sass/nefo_style.scss */
@@ -269,16 +269,16 @@ img {
 }
 /* line 198, ../sass/nefo_style.scss */
 .product h3 {
-  top: 50px;
+  top: 100px;
+  font-size: 1.5em;
+}
+/* line 203, ../sass/nefo_style.scss */
+.product p {
+  top: 180px;
   font-size: 1em;
 }
-/* line 202, ../sass/nefo_style.scss */
-.product p {
-  top: 100px;
-  font-size: 0.8em;
-}
 
-/* line 208, ../sass/nefo_style.scss */
+/* line 209, ../sass/nefo_style.scss */
 .product-item-1 {
   width: 31.91489%;
   float: left;
@@ -287,7 +287,7 @@ img {
   clear: none;
 }
 
-/* line 212, ../sass/nefo_style.scss */
+/* line 213, ../sass/nefo_style.scss */
 .product-item-2 {
   width: 31.91489%;
   float: left;
@@ -296,7 +296,7 @@ img {
   clear: none;
 }
 
-/* line 216, ../sass/nefo_style.scss */
+/* line 217, ../sass/nefo_style.scss */
 .product-item-3 {
   width: 31.91489%;
   float: right;
@@ -305,7 +305,7 @@ img {
   clear: none;
 }
 
-/* line 220, ../sass/nefo_style.scss */
+/* line 221, ../sass/nefo_style.scss */
 .p-img img {
   width: 100%;
   float: right;
@@ -314,13 +314,13 @@ img {
   clear: none;
 }
 
-/* line 224, ../sass/nefo_style.scss */
+/* line 225, ../sass/nefo_style.scss */
 .p-img::after {
   content: " ";
   width: 250px;
   height: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0), #000000);
-  top: 72px;
+  top: 150px;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -330,7 +330,27 @@ img {
   clear: none;
 }
 
-/* line 236, ../sass/nefo_style.scss */
+/* line 237, ../sass/nefo_style.scss */
+.product-sub-1 {
+  float: left;
+}
+
+/* line 241, ../sass/nefo_style.scss */
+.product-sub-2 {
+  float: right;
+}
+
+/* line 246, ../sass/nefo_style.scss */
+.product-rule {
+  clear: right;
+  position: relative;
+  top: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: #7bad4a;
+}
+
+/* line 255, ../sass/nefo_style.scss */
 .clearfix::before {
   content: ".";
   clear: both;
@@ -339,19 +359,20 @@ img {
   height: 0px;
 }
 
-/* line 244, ../sass/nefo_style.scss */
+/* line 263, ../sass/nefo_style.scss */
 .lang-selected {
   background-color: #5295cc;
   color: #fffcf3;
   padding: 3px 7px;
 }
 
-/* line 251, ../sass/nefo_style.scss */
+/* line 271, ../sass/nefo_style.scss */
 .dates ul, .bio-news ul, .ipbes-news ul {
+  height: 280px;
   list-style-type: none;
   padding: 0px;
 }
-/* line 254, ../sass/nefo_style.scss */
+/* line 275, ../sass/nefo_style.scss */
 .dates ul h3, .bio-news ul h3, .ipbes-news ul h3 {
   background-color: #7bad4a;
   color: #fffcf3;
@@ -365,7 +386,7 @@ img {
   background-size: 35px 35px;
 }
 
-/* line 269, ../sass/nefo_style.scss */
+/* line 290, ../sass/nefo_style.scss */
 .dates {
   width: 31.91489%;
   float: left;
@@ -373,7 +394,7 @@ img {
   margin-left: 0;
   clear: none;
 }
-/* line 271, ../sass/nefo_style.scss */
+/* line 292, ../sass/nefo_style.scss */
 .dates h2 {
   font-size: 12pt;
   position: relative;
@@ -383,7 +404,7 @@ img {
   padding: 0 1em;
 }
 
-/* line 282, ../sass/nefo_style.scss */
+/* line 303, ../sass/nefo_style.scss */
 .bio-news {
   width: 31.91489%;
   float: left;
@@ -391,7 +412,7 @@ img {
   margin-left: 34.04255%;
   clear: none;
 }
-/* line 284, ../sass/nefo_style.scss */
+/* line 305, ../sass/nefo_style.scss */
 .bio-news h2 {
   font-size: 12pt;
   position: relative;
@@ -401,7 +422,7 @@ img {
   padding: 0 1em;
 }
 
-/* line 295, ../sass/nefo_style.scss */
+/* line 316, ../sass/nefo_style.scss */
 .ipbes-news {
   width: 31.91489%;
   float: right;
@@ -409,7 +430,7 @@ img {
   margin-right: 0;
   clear: none;
 }
-/* line 297, ../sass/nefo_style.scss */
+/* line 318, ../sass/nefo_style.scss */
 .ipbes-news h2 {
   font-size: 12pt;
   position: relative;
@@ -419,25 +440,33 @@ img {
   padding: 0 1em;
 }
 
-/* line 309, ../sass/nefo_style.scss */
+/* line 329, ../sass/nefo_style.scss */
+.studies {
+  margin-top: 20px;
+}
+/* line 332, ../sass/nefo_style.scss */
 .studies h2 {
   font-size: 12pt;
   position: relative;
+  top: -20px;
   display: inline;
   background-color: #40759f;
   color: #fffcf3;
   padding: 0 1em;
 }
 
-/* line 320, ../sass/nefo_style.scss */
+/* line 344, ../sass/nefo_style.scss */
 .study-item {
   background-color: #5295cc;
   color: #fffcf3;
   height: 7em;
-  padding: 0px 13px;
+}
+/* line 350, ../sass/nefo_style.scss */
+.study-item h3 {
+  vertical-align: middle;
 }
 
-/* line 328, ../sass/nefo_style.scss */
+/* line 355, ../sass/nefo_style.scss */
 .study-item-1 {
   width: 24.17582%;
   float: left;
@@ -446,7 +475,7 @@ img {
   clear: none;
 }
 
-/* line 331, ../sass/nefo_style.scss */
+/* line 358, ../sass/nefo_style.scss */
 .study-item-2 {
   width: 24.17582%;
   float: left;
@@ -455,7 +484,7 @@ img {
   clear: none;
 }
 
-/* line 334, ../sass/nefo_style.scss */
+/* line 361, ../sass/nefo_style.scss */
 .study-item-3 {
   width: 24.17582%;
   float: left;
@@ -464,11 +493,145 @@ img {
   clear: none;
 }
 
-/* line 337, ../sass/nefo_style.scss */
+/* line 364, ../sass/nefo_style.scss */
 .study-item-4 {
   width: 24.17582%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+}
+
+/* line 368, ../sass/nefo_style.scss */
+.footer {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 374, ../sass/nefo_style.scss */
+.footer a {
+  width: 15.78947%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 5.26316%;
+}
+/* line 377, ../sass/nefo_style.scss */
+.footer a:last-child {
+  width: 15.78947%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+/* line 383, ../sass/nefo_style.scss */
+.footer a {
+  color: #999999;
+  text-decoration: none;
+  font-size: 16pt;
+}
+/* line 389, ../sass/nefo_style.scss */
+.footer a img {
+  vertical-align: middle;
+}
+/* line 392, ../sass/nefo_style.scss */
+.footer img {
+  margin-right: 20px;
+  width: 50px;
+}
+
+/* line 400, ../sass/nefo_style.scss */
+.color-rule {
+  height: 3px;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  background-color: #4291a3;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF4291A3', endColorstr='#FF7EB24B');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyOTFhMyIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjNDM3ZWI2Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNhY2NjNDQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZWIyNGIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #4291a3), color-stop(40%, #437eb6), color-stop(75%, #accc44), color-stop(100%, #7eb24b));
+  background-image: -moz-linear-gradient(left, #4291a3 0%, #437eb6 40%, #accc44 75%, #7eb24b 100%);
+  background-image: -webkit-linear-gradient(left, #4291a3 0%, #437eb6 40%, #accc44 75%, #7eb24b 100%);
+  background-image: linear-gradient(to right, #4291a3 0%, #437eb6 40%, #accc44 75%, #7eb24b 100%);
+}
+
+/* line 413, ../sass/nefo_style.scss */
+.sitemap {
+  background-color: #f9f9f9;
+}
+/* line 415, ../sass/nefo_style.scss */
+.sitemap ul {
+  list-style-type: none;
+  padding: 0 0;
+}
+/* line 419, ../sass/nefo_style.scss */
+.sitemap li {
+  color: #5295cc;
+  font-weight: bold;
+}
+
+/* line 424, ../sass/nefo_style.scss */
+.sitemap-1 {
+  width: 14.89362%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+/* line 428, ../sass/nefo_style.scss */
+.sitemap-2 {
+  width: 14.89362%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 17.02128%;
+  clear: none;
+}
+
+/* line 432, ../sass/nefo_style.scss */
+.sitemap-3 {
+  width: 14.89362%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 34.04255%;
+  clear: none;
+}
+
+/* line 436, ../sass/nefo_style.scss */
+.sitemap-4 {
+  width: 14.89362%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 51.06383%;
+  clear: none;
+}
+
+/* line 440, ../sass/nefo_style.scss */
+.sitemap-5 {
+  width: 14.89362%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 68.08511%;
+  clear: none;
+}
+
+/* line 444, ../sass/nefo_style.scss */
+.sitemap-6 {
+  width: 14.89362%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/* line 448, ../sass/nefo_style.scss */
+#bmbf {
+  width: 100%;
 }
