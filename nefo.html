@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Nefo - Vielfalt im Dialog</title>
   <link media="all" href="stylesheets/nefo_style.css" rel="stylesheet">
+  <link rel="stylesheet" href="javascripts/flexslider/flexslider.css" type="text/css" media="screen">
 </head>
 <body>
   <div class="color-rule"></div>
@@ -40,6 +41,45 @@
         <h2>Feature</h2>
         <h3>Die Zahl vieler Bienen</h3>
         <p>Noch mehr Fülltext. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eligendi praesentium sapiente sunt dicta debitis dolor neque reiciendis id quia pariatur voluptatem perspiciatis molestiae fugiat, ratione esse aliquid, alias cumque.</p>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/bee-hero-2.jpg" />
+            <div class="flex-caption">
+              <h2>Ohne sie läuft nichts: Bestäuber-Insekten und ihre Rolle für unsere Ernährung</h2>
+              <p>Die Zahl und Vielfalt der Bienen, Hummeln und anderer bestäubender Insekten geht seit einigen Jahrzehnten dramatisch zurück - mit schwerwiegendene Folgen für die globale Biodiversität und die Produktion unserer Nahrungsmittel</p>
+              <a class="button slider-button" href="more">Mehr erfahren</a>
+            </div>
+            <ul class="flex-control-nav">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <img src="images/panda.jpg" />
+            <p class="flex-caption">A sleepy panda</p>
+            <ul class="flex-control-nav">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <img src="images/red-panda.jpg" />
+            <p class="flex-caption">cheeky red panda</p>
+            <ul class="flex-control-nav">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+
+        </ul>
       </div>
     </div>
 
@@ -265,5 +305,19 @@
   </div> <!-- .main -->
 <div style="clear:both">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a> / Color changed by NEFO</div>
 <div>Letter-Icon made by <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    
+    <script type="text/javascript" src="javascripts/jquery-1.11.3.js"></script>
+    <script defer="" src="javascripts/flexslider/jquery.flexslider.js"></script>
+    <script>
+      $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        directionNav: false,
+        manualControls: ".flex-control-nav li",
+      });
+      $('.flexslider').flexslider("pause");
+});
+    </script>
+
 </body>
 </html>

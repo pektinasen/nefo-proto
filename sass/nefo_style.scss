@@ -51,6 +51,8 @@ header {
 	}
 }
 
+
+
 ul.navigation li.login a{
 	color: $date-bg-color;
 	background: url(../images/login.svg);
@@ -110,6 +112,23 @@ nav ul.second-nav {
 	// @include grid-span(2,11);
 }
 
+.flexslider .slides img {
+	max-width:800px;
+	max-height: 400px;
+	float:left;
+}
+
+.flex-caption {
+	display: inline-block;
+	padding-left: 20px;
+	width: 500px;
+}
+
+
+.slider-button {
+	position: absolute;
+	bottom: 40px;
+}
 
 img {
 	max-height: 250px;
@@ -133,6 +152,7 @@ img {
 
 .feature-img {
 	@include grid-span(5,1);
+
 }
 
 .feature-content {
@@ -375,13 +395,15 @@ img {
 .interview-content {
 	@include grid-span(7,6)	;
 
-	.button {
+	
+
+}
+
+.button {
 		background-color: $date-bg-color;
 		border-radius: 10px;
 		padding: 10px 30px;
 		color: $color;
-	}
-
 }
 
 .interview {
@@ -403,7 +425,7 @@ img {
 	}
 	
 	a {
-		
+
 	}
 	.last-chevron {
 		color : grey;
