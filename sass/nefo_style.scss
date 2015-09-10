@@ -129,12 +129,6 @@ img {
 
 .feature {
 	margin-top: 2em;
-	h2 {
-		display: inline;
-		background-color: $heading-bg;
-		color: $color;
-	}
-
 }
 
 .feature-img {
@@ -144,6 +138,11 @@ img {
 .feature-content {
 	margin: auto 0;
 	@include grid-span(7,6);
+	h2 {
+		display: inline-block;
+		color: $color;
+		background-color: $heading-bg;
+	}
 }
 
 .news {
@@ -365,6 +364,52 @@ img {
 	@include grid-span(3,10, $gutter: 0.15);	
 }
 
+.interview-image {
+	@include grid-span(5,1);
+	img {
+		max-width: 100%;
+		max-height: 350px;
+	}
+}
+
+.interview-content {
+	@include grid-span(7,6)	;
+
+	.button {
+		background-color: $date-bg-color;
+		border-radius: 10px;
+		padding: 10px 30px;
+		color: $color;
+	}
+
+}
+
+.interview {
+	padding-top: 20px;	
+	h2 {
+		margin-top: 0px;
+		font-size: 16pt;
+		display: inline-block;
+		background-color: $heading-bg;
+		color: $color;
+	}
+	h3 {
+		font-size: 20pt;
+	}
+
+	.highlight {
+		color: $nav-color;
+		font-weight: bold;
+	}
+	
+	a {
+		
+	}
+	.last-chevron {
+		color : grey;
+	}
+}
+
 .footer {
 	@include grid-span(12,1);
 	padding-top: 20px;
@@ -405,8 +450,8 @@ img {
 	@include background-image(
 		linear-gradient(left,
 			rgba(66,145,163,1) 0%,
-			rgba(67,126,182,1) 40%,
-			rgba(172,204,68,1) 75%,
+			rgba(67,126,182,1) 30%,
+			rgba(172,204,68,1) 60%,
 			rgba(126,178,75,1) 100%));
 }
 
