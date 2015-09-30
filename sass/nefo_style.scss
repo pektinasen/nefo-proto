@@ -30,8 +30,8 @@ body {
 
 
 #logo {
-	max-width: 320px;
-	max-height: 100px;
+	width: 445px;
+	max-height: 113px;
 	float: left;
 }
 
@@ -112,6 +112,17 @@ nav ul.second-nav {
 	// @include grid-span(2,11);
 }
 
+.search {
+	background-color: lightgrey;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 40px;
+	background-image: url(../images/magnifying.svg);
+	background-repeat: no-repeat;
+	background-position: 95%;	
+	background-size: 25px 25px;
+}
+
 .flexslider .slides img {
 	max-width:800px;
 	max-height: 400px;
@@ -122,8 +133,43 @@ nav ul.second-nav {
 	display: inline-block;
 	padding-left: 20px;
 	width: 500px;
+	height: 100%;
+}
+.flexsliderwrapper {
+    position: relative; /* Since we're positioning the flex-control-paging element within this div */
+    border: 1px solid red;
+
 }
 
+ol.flex-control-paging {
+    z-index: 99;
+    list-style: none;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    }
+
+ol.flex-control-paging li {
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    margin: 0 7px;
+    }
+
+ol.flex-control-paging li a {
+    text-indent: -999999px;
+    display: block;
+    background: #bec5ca;
+    font-size: 2.5em;
+    text-shadow: 0 1px 0 #fff;
+    width: 11px; height: 11px;
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px;
+    cursor: pointer;
+    }
+
+ol.flex-control-paging li a.flex-active {
+    background: #455560;
+    }
 
 .slider-button {
 	position: absolute;
@@ -424,9 +470,12 @@ img {
 		font-weight: bold;
 	}
 	
-	a {
-
+	.interview-links {
+		@include grid-span(7,6);
+		position: relative;
+		bottom: 5px;
 	}
+
 	.last-chevron {
 		color : grey;
 	}

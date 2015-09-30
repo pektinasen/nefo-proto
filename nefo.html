@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="javascripts/flexslider/flexslider.css" type="text/css" media="screen">
 </head>
 <body>
+
+<div class="wrapper">
   <div class="color-rule"></div>
+
   <header class="clearfix">
-    <img id="logo" src="images/nefo-logo.png" alt="Das Nefo Logo">
+    <img id="logo" src="images/nefo-logo-entscheidung.png" alt="Das Nefo Logo">
     <ul class="navigation">
       <li class="login"><a href="">Login</a></li>
       <li><a href="login">Presse</a></li>
@@ -17,6 +20,7 @@
       <li><a href="akronyme">Akronyme</a></li>
       <li><a href="kontakt">Kontakt</a></li>
       <li><a href="#de"><span class="lang-selected">DE</span> | EN</a></li>
+      <li class="search">| Search</li>
     </ul>
   </header>
 
@@ -44,7 +48,7 @@
       </div>
     </div>
     
-    <div class="container">
+    <div class="flexsliderwrapper container">
       <div class="flexslider">
         <ul class="slides">
           <li>
@@ -54,33 +58,21 @@
               <p>Die Zahl und Vielfalt der Bienen, Hummeln und anderer bestäubender Insekten geht seit einigen Jahrzehnten dramatisch zurück - mit schwerwiegendene Folgen für die globale Biodiversität und die Produktion unserer Nahrungsmittel</p>
               <a class="button slider-button" href="more">Mehr erfahren</a>
             </div>
-            <ul class="flex-control-nav">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
           </li>
           <li>
             <img src="images/panda.jpg" />
             <p class="flex-caption">A sleepy panda</p>
-            <ul class="flex-control-nav">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
           </li>
           <li>
             <img src="images/red-panda.jpg" />
             <p class="flex-caption">cheeky red panda</p>
-            <ul class="flex-control-nav">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+
           </li>
 
         </ul>
+
       </div>
+              
     </div>
 
     <div class="news container clearfix">
@@ -236,6 +228,10 @@
         <p class="subcaption">DFG fördert Infrastruktu für öffentliche zugängliche Bidiversitätsforschungsdate
         und bestimmt Richtlinien zuum Datenmanagement.</p>
         <p class="teaser">Interview mit <span class="highlight">Prof Dr. Dr. Leela</span>, Planet Express, Captain und letzter lebender Zyklop.</p>
+        
+      </div>
+      <div class="interview-links">
+        
         <a class="button">zum Interview</a>
         <a href="all_interviews">alle Interviews <span class="last-chevron">></span></a>
       </div>
@@ -243,7 +239,7 @@
     
     <div class="color-rule"></div>
 
-    <div class="footer">
+    <div id="footer" class="footer">
       <a href="publication"><img src="images/book.svg" alt=""><span class="f-content">Publikation</span></a>
       <a href="workshops"><img src="images/presentation.svg" alt=""><span class="f-content">Workshops</span></a>
       <a href="wegweiser"><img src="images/traffic.svg" alt=""><span class="f-content">Wegweiser</span></a>
@@ -303,6 +299,7 @@
     </div> <!-- sitemap -->
 
   </div> <!-- .main -->
+  </div>
 <div style="clear:both">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a> / Color changed by NEFO</div>
 <div>Letter-Icon made by <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     
@@ -310,13 +307,13 @@
     <script defer="" src="javascripts/flexslider/jquery.flexslider.js"></script>
     <script>
       $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        directionNav: false,
-        manualControls: ".flex-control-nav li",
-      });
-      $('.flexslider').flexslider("pause");
-});
+        $('.flexslider').flexslider({
+          animation: "slide",
+          directionNav: false,
+          manualControls: ".flex-control-nav li",
+        });
+        $('.flexslider').flexslider("pause");
+    });
     </script>
 
 </body>
