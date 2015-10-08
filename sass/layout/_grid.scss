@@ -1,0 +1,15 @@
+@import "singularitygs";
+@import "breakpoint";
+
+@include add-grid(12);
+//@include add-grid(12 at 760);
+
+.layout-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.container {
+  @include grid-span(12, 1);
+}
+

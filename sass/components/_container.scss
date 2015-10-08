@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import 'compass/css3/images';
+
+.container {
+  border-bottom: 2px solid hsl(0, 0, 90%);
+  padding-bottom: 4em;
+  @include filter-gradient(#03207c, #1e5799, vertical); // IE6-9
+  @include background-image(linear-gradient(bottom,
+    $container-gradient-start 0px,
+    $container-gradient-end 40px));
+}
