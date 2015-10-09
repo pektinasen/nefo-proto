@@ -7,12 +7,15 @@
     "breakpoint-sass": "^2.6.1",
     "eyeglass": "github:sass-eyeglass/eyeglass",
     "gulp": "^3.9.0",
+    "gulp-copy": "0.0.2",
     "gulp-sass": "^2.0.4",
+    "kss": "^2.1.0",
     "node-bourbon": "^4.2.3",
     "singularitygs": "^1.6.2"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "kss": "kss-node --config='kss-node.json'"
   },
   "repository": {
     "type": "git",

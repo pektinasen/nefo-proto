@@ -1,0 +1,8 @@
+{
+  "css": "../css/style.css",
+  "source": [
+    "css"
+  ],
+  "destination": "styleguide",
+  "template": "nefo-kss-template"
+}
