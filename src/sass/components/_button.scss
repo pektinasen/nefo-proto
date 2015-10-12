@@ -2,14 +2,17 @@
 Button
 
 Markup:
-	<div class="button {modifier}">A Button</div>
-	<button class="button {modifier}">A Button</button>
+	<div class="button {modifier}">My Button</div>
+	<button class="button {modifier}">My Button</button>
 
-Styleguide 1
+
 */
 
 button,
 .button {
-	height: 2 * 1rem;
-	color: blue;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: $button-bg-color;
+  color: $button-color;
 }

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Nefo-Site" />
+  <component name="PublishConfigData" serverName="Drupal 8.0.x">
+    <serverData>
+      <paths name="Drupal 8.0.x">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="nefo-proto" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>

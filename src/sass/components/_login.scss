@@ -1,0 +1,19 @@
+/*
+Login Button
+
+The Login Button
+
+Markup:
+  <div class="login">Login</div>
+
+*/
+.login {
+  background-image: url("../images/login.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 17px 17px;
+  color: $login-color;
+  padding-left: 25px;
+
+}
+

@@ -1,0 +1,26 @@
+.header__search,
+.header__nav,
+.header__login {
+  display: none;
+}
+
+.header__menu {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 35px;
+  background-image: url("../images/menu.svg");
+  background-position: 10px 0px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.header__nav ul {
+  list-style: none;
+  li {
+    display: inline;
+  }
+  li a {
+    text-decoration: none;
+    color: $nav-color;
+  }
+}

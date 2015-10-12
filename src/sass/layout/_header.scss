@@ -1,0 +1,14 @@
+header {
+
+  @include grid-span(2, 1);
+  @include background-grid();
+}
+
+.header__logo {
+  @include grid-span(2, 1);
+}
+.header__menu {
+  @include grid-span(2, 1);
+  clear:right;
+}
+

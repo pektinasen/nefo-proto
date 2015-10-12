@@ -29,7 +29,7 @@ gulp.task('sass:watch', function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('kss', function(cb){
+gulp.task('kss', function(){
     exec('npm run kss', function (err, stdout, stderr) {
         console.log(err);
         console.log(stdout);
@@ -38,7 +38,7 @@ gulp.task('kss', function(cb){
 });
 
 gulp.task('kss:watch', function () {
-    gulp.watch('./src/sass/**/*.scss', ['sass', 'kss']);
+    gulp.watch('./css/style.css', [ 'kss']);
 });
 
 //gulp.task('default', function () {
