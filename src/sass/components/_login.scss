@@ -7,7 +7,7 @@ Markup:
   <div class="login">Login</div>
 
 */
-.login {
+.header__login {
   background-image: url("../images/login.svg");
   background-repeat: no-repeat;
   background-position: left top;
@@ -15,5 +15,13 @@ Markup:
   color: $login-color;
   padding-left: 25px;
 
+  a {
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
 }
-

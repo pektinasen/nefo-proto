@@ -1,14 +1,33 @@
-header {
 
-  @include grid-span(2, 1);
-  @include background-grid();
+header {
+  @include grid-span(4, 1);
+  clear:both;
 }
 
 .header__logo {
-  @include grid-span(2, 1);
+  @include grid-span(1, 1);
 }
+
+.header__nav,
+.header__search {
+  @include grid-span(2,3);
+}
+
+.header__login,
 .header__menu {
-  @include grid-span(2, 1);
-  clear:right;
+  @include grid-span(1,2);
 }
+
+.header__login {
+  clear: right;
+}
+
+
+.header__menu {
+  //  new line in header navigation
+  clear: right;
+}
+
+
+
 

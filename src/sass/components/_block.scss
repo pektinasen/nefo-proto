@@ -1,0 +1,8 @@
+.block {
+  border-bottom: 2px solid rgb(229,229,229);
+  padding-bottom: 4em;
+  //@include filter-gradient(#03207c, #1e5799, vertical); // IE6-9
+  @include background-image(linear-gradient(bottom,
+          rgba(243,243,243,1) 0px,
+          rgba(243,243,243, 0.01) 40px));
+}

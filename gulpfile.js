@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass'),
-    kss = require('gulp-kss'),
+    kss = require('kss'),
     Eyeglass = require('eyeglass').Eyeglass,
     exec = require('child_process').exec;
 

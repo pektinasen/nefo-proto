@@ -1,4 +1,14 @@
-@include add-grid(2);
-@include add-gutter(0.1);
+@include add-grid(4);
+@include add-gutter(0);
 
-@include sgs-change('debug', true);
+.color-rule {
+  @include grid-span(4,1);
+}
+
+.slides {
+  @include grid-span(4,1);
+}
+
+main {
+  @include grid-span(4,1);
+}

@@ -1,0 +1,57 @@
+.slides {
+  img {
+    width: 100%;
+  }
+}
+
+.flex-caption {
+  background-color: $slides-bg;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  h2 {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  position: relative;
+}
+
+.kuller {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $kuller-color;
+}
+
+.kuller--outer {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  background-color: $kuller-outer-color;
+}
+
+.kuller--middle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $kuller-middle-color;
+}
+
+.kuller--inner {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $kuller-inner-color;
+}

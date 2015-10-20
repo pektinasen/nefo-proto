@@ -1,0 +1,10 @@
+@include layout(2,0.05){
+
+.news-item-1 {
+  @include grid-span(1,1);
+}
+
+.news-item-2 {
+  @include grid-span(1,2);
+}
+};

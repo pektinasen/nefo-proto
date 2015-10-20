@@ -1,0 +1,14 @@
+
+
+.header__search input[type="search"] {
+  border: none;
+
+}
+
+.header__search form {
+  @include vertical-align;
+}
+
+.header__search {
+  transform-style: preserve-3d;
+}

@@ -1,0 +1,22 @@
+@import 'singularitygs/singularitygs';
+@import 'breakpoint';
+@import 'bourbon';
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+img{
+  display: block;
+}
